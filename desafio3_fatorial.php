@@ -1,5 +1,5 @@
 <?php
-$input = 5;
+$input = readline("Digite um numero: ");
 $multiplicando = 1;
 $cont = 1;
 
