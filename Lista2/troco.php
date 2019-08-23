@@ -33,4 +33,15 @@ function troco($valor){
     return print_r($notas);
 }
 
+function trocoV2($valor){
+    $troco = [];
+    $notas = [50, 20, 10, 5, 2, 1];
+    for($i;$i<6;$i++){
+        while($valor>=$notas[$i]){
+            $valor-=$notas[$i];
+            $troco[$i]++;
+        }
+    }
+}
+
 echo troco(89);
